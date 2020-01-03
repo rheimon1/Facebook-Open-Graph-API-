@@ -1,0 +1,37 @@
+#user-likes-list {
+    list-style: none;
+    padding: 5px;
+    margin: 0;
+}
+
+#user-likes-list li {
+    display: inline-block;
+    width: 270px;
+    margin: 5px;
+    background-color: rgb(122, 174, 233);
+    height: 100px;
+    overflow: hidden;
+}
+
+#user-likes-list img {
+    display: inline-block;
+    vertical-align: top;
+    width: 100px;
+}
+
+#user-likes-list h1 {
+    font-size: 1.4em;
+    display: inline-block;
+    width: 160px;
+    vertical-align: top;
+    margin-left: 5px;
+    color: rgb(20, 90, 169);
+    margin: 5px 0 0 5px;
+}
+
+#user-likes-list small {
+    font-size: 0.7em;
+    display: block;
+    color: rgb(145, 50, 0);
+    margin-top: 5px;
+}

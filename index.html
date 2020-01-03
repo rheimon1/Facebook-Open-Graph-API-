@@ -1,0 +1,38 @@
+<html>
+
+<head>
+    <title>Rahh</title>
+    <script src="http://fb.me/react-0.12.2.js"></script>
+    <script src="http://fb.me/JSXTransformer-0.12.2.js"></script>
+    <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <h1>Facebook User's list of likes</h1>
+    <div id="user"></div>
+    <div id="main"></div>
+    <script>
+        window.fbAsyncInit = function () {
+            FB.init({
+                appId: '536502876950511',
+                cookie: true,
+                xfbml: true,
+                version: 'v5.0'
+            });
+            checkLoginStatusAndLoadUserLikes();
+        };
+        (function (d, s, id) {
+            var js, fjs = d.getElementsByTagName(s)[0];
+            if (d.getElementById(id)) { return; }
+            js = d.createElement(s); js.id = id;
+            js.src = "https://connect.facebook.net/en_US/sdk/debug.js";
+            fjs.parentNode.insertBefore(js, fjs);
+        }(document, 'script', 'facebook-jssdk'));
+    </script>
+
+    <script type="text/jsx" src="index.jsx"></script>
+</body>
+
+</html>
